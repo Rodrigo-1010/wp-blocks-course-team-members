@@ -5,8 +5,48 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-boilerplate {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block-blocks-course-team-members {
+	display: grid;	
+
+	// &.has-2-columns {
+	// 	grid-template-columns: repeat(2, 1fr);
+	// }
+	// &.has-3-columns {
+	// 	grid-template-columns: repeat(3, 1fr);
+	// }
+	// &.has-4-columns {
+	// 	grid-template-columns: repeat(4, 1fr);
+	// }
+	// &.has-5-columns {
+	// 	grid-template-columns: repeat(5, 1fr);
+	// }
+	// &.has-6-columns {
+	// 	grid-template-columns: repeat(6, 1fr);
+	// }
+
+	//Instead do this..
+	@for $i from 2 through 6 {
+		&.has-#{$i}-columns {
+			grid-template-columns: repeat(#{$i}, 1fr);
+		}
+	}
+
+	.wp-block-blocks-course-team-member {
+		margin: 1rem;
+
+		h4 {
+			color: #222;
+			font-size: 22px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		p {
+			color: #565656;
+			font-size: 16px;
+			font-weight: 300;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+	} 
 }

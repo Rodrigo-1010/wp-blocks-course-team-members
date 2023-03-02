@@ -4,6 +4,36 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-boilerplate {
-	border: 1px dotted #f03;
+.wp-block-blocks-course-team-members {
+	display: block;
+
+	@for $i from 2 through 6 {
+		&.has-#{$i}-columns {
+			.block-editor-block-list__layout {
+			grid-template-columns: repeat(#{$i}, 1fr);
+		}}
+	}
+
+	.block-editor-block-list__layout {
+		display: grid;	
+
+		> div > div {
+			margin: 1rem;
+
+		h4 {
+			color: #222;
+			font-size: 22px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		p {
+			color: #565656;
+			font-size: 16px;
+			font-weight: 300;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+		}
+	}
 }

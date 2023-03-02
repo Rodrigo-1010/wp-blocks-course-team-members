@@ -1,1 +1,51 @@
-.wp-block-create-block-boilerplate{background-color:#21759b;color:#fff;padding:2px}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-blocks-course-team-members {
+  display: -ms-grid;
+  display: grid;
+}
+.wp-block-blocks-course-team-members.has-2-columns {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+.wp-block-blocks-course-team-members.has-3-columns {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+.wp-block-blocks-course-team-members.has-4-columns {
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+.wp-block-blocks-course-team-members.has-5-columns {
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+}
+.wp-block-blocks-course-team-members.has-6-columns {
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+}
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member {
+  margin: 1rem;
+}
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member h4 {
+  color: #222;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member p {
+  color: #565656;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
