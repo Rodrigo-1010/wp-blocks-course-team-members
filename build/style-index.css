@@ -34,10 +34,13 @@
 .wp-block-blocks-course-team-members .wp-block-blocks-course-team-member {
   margin: 1rem;
 }
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member img {
+  margin-bottom: 30px;
+}
 .wp-block-blocks-course-team-members .wp-block-blocks-course-team-member h4 {
   color: #222;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0;
 }
 .wp-block-blocks-course-team-members .wp-block-blocks-course-team-member p {
@@ -46,6 +49,17 @@
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 30px;
+}
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member .wp-block-blocks-course-team-member-social-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+.wp-block-blocks-course-team-members .wp-block-blocks-course-team-member .wp-block-blocks-course-team-member-social-links ul li a {
+  text-decoration: none;
+  color: #4e4e4e;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

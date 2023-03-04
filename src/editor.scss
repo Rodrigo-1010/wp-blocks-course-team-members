@@ -10,30 +10,104 @@
 	@for $i from 2 through 6 {
 		&.has-#{$i}-columns {
 			.block-editor-block-list__layout {
-			grid-template-columns: repeat(#{$i}, 1fr);
-		}}
+				grid-template-columns: repeat(#{$i}, 1fr);
+			}
+
+			.block-list-appender {
+				position: static;
+				border: 1px dashed;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 70px;
+			}
+		}
 	}
 
 	.block-editor-block-list__layout {
-		display: grid;	
+		display: grid;
 
 		> div > div {
 			margin: 1rem;
 
-		h4 {
-			color: #222;
-			font-size: 22px;
-			font-weight: 300;
-			margin: 0;
-		}
+			.block-editor-media-placeholder {
+				margin-bottom: 30px;
+			}
 
-		p {
-			color: #565656;
-			font-size: 16px;
-			font-weight: 300;
-			margin-top: 5px;
-			margin-bottom: 30px;
-		}
+			.wp-block-blocks-course-team-member-img {
+				position: relative;
+				margin-bottom: 30px;
+
+				&.is-loading img {
+					opacity: 0.3;
+				}
+
+				.components-spinner {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			h4 {
+				color: #222;
+				font-size: 22px;
+				font-weight: 600;
+				margin: 0;
+			}
+
+			p {
+				color: #565656;
+				font-size: 16px;
+				font-weight: 300;
+				margin-top: 5px;
+				margin-bottom: 30px;
+			}
+
+			.wp-block-blocks-course-team-member-social-links {
+				ul {
+					list-style: none;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					padding: 0;
+					 
+					li {
+						button {
+							border: none;
+							background: none;
+							cursor: pointer;
+							padding: 0;
+							margin: 0;
+						}
+
+						span.dashicon {
+							color: #4e4e4e;
+						}
+
+						&.is-selected {
+							outline: 2px solid rgb(31, 161, 112);
+						}
+
+						&.wp-block-blocks-course-team-member-add-icon-li {
+							button {
+								background: none;
+								border: none;
+								outline: 1px dashed;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								cursor: pointer;
+								padding: none;
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

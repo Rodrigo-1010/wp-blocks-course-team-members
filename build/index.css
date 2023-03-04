@@ -13,21 +13,61 @@
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
+.wp-block-blocks-course-team-members.has-2-columns .block-list-appender {
+  position: static;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+}
 .wp-block-blocks-course-team-members.has-3-columns .block-editor-block-list__layout {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
+}
+.wp-block-blocks-course-team-members.has-3-columns .block-list-appender {
+  position: static;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
 }
 .wp-block-blocks-course-team-members.has-4-columns .block-editor-block-list__layout {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
 }
+.wp-block-blocks-course-team-members.has-4-columns .block-list-appender {
+  position: static;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+}
 .wp-block-blocks-course-team-members.has-5-columns .block-editor-block-list__layout {
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
 }
+.wp-block-blocks-course-team-members.has-5-columns .block-list-appender {
+  position: static;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+}
 .wp-block-blocks-course-team-members.has-6-columns .block-editor-block-list__layout {
   -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
+}
+.wp-block-blocks-course-team-members.has-6-columns .block-list-appender {
+  position: static;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
 }
 .wp-block-blocks-course-team-members .block-editor-block-list__layout {
   display: -ms-grid;
@@ -36,10 +76,28 @@
 .wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div {
   margin: 1rem;
 }
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .block-editor-media-placeholder {
+  margin-bottom: 30px;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-img.is-loading img {
+  opacity: 0.3;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-img .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 .wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div h4 {
   color: #222;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
 }
 .wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div p {
@@ -48,6 +106,37 @@
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 30px;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-social-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-social-links ul li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-social-links ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-social-links ul li.is-selected {
+  outline: 2px solid #1fa170;
+}
+.wp-block-blocks-course-team-members .block-editor-block-list__layout > div > div .wp-block-blocks-course-team-member-social-links ul li.wp-block-blocks-course-team-member-add-icon-li button {
+  background: none;
+  border: none;
+  outline: 1px dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: none;
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map*/

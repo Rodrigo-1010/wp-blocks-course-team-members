@@ -23,6 +23,48 @@ registerBlockType('blocks-course/team-member', {
 			source: 'html',
 			selector: 'p',
 		},
+		id: {
+			type: 'number',
+		},
+		alt: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'alt',
+			default: '',
+		},
+		url: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'src',
+		},
+		socialLinks: {
+			type: 'array',
+			default: [
+				{
+					link: 'https:/facebook.com',
+					icon: 'facebook',
+				},
+				{
+					link: 'https:/instagram.com',
+					icon: 'instagram',
+				},
+			],
+			source: 'query',
+			selector: '.wp-block-blocks-course-team-member-social-links ul li',
+			query: {
+				icon: {
+					source: 'attribute',
+					attribute: 'data-icon',
+				},
+				link: {
+					selector: 'a',
+					source: 'attribute',
+					attribute: 'href',
+				},
+			},
+		},
 	},
 	edit: Edit,
 	save: Save,

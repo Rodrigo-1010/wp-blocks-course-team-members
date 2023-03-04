@@ -6,7 +6,7 @@
  */
 
 .wp-block-blocks-course-team-members {
-	display: grid;	
+	display: grid;
 
 	// &.has-2-columns {
 	// 	grid-template-columns: repeat(2, 1fr);
@@ -34,6 +34,10 @@
 	.wp-block-blocks-course-team-member {
 		margin: 1rem;
 
+		img {
+			margin-bottom: 30px;
+		}
+
 		h4 {
 			color: #222;
 			font-size: 22px;
@@ -48,5 +52,22 @@
 			margin-top: 5px;
 			margin-bottom: 30px;
 		}
-	} 
+
+		.wp-block-blocks-course-team-member-social-links {
+			ul {
+				list-style: none;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					padding: 0;
+
+					li {
+						a {
+							text-decoration: none;
+							color: #4e4e4e;
+						}
+					}
+			}
+		}
+	}
 }
